@@ -1,9 +1,10 @@
 /*
-Task 1:
+Task 1b:
 	
 	Introduction to an array
 	
-	declaration, 
+	declaration, assignment and display
+	 
 
 
 */
@@ -17,10 +18,15 @@ main()
 	
 	int my_first[4];	//declaration of an array
 	
-	my_first[0]=1;		//assigning value to an array
-	my_first[1]=2;
-	my_first[2]=3;
-	my_first[3]=4;
+	cout<<"\nPlease enter first value of array ";
+	cin>>my_first[0];
+	cout<<"\nPlease enter second value of array   ";
+	cin>>my_first[1];
+	cout<<"\nPlease enter third value of array   ";
+	cin>>my_first[2];
+	cout<<"\nPlease enter fourth value of array   ";
+	cin>>my_first[3];
+	
 	
 	cout<<"\ncontent of first element of array are  "<<my_first[0];
 	cout<<"\ncontent of second element of array are  "<<my_first[1];
