@@ -1,33 +1,25 @@
 /*
-Task 2:
-	
-	Introduction to an array
-	
-	When data entered in an array is equal's to '-1' array entry should terminate
-	 
+Task 2
 
+Write program takes value from user if value is divisible by 2 print even if not than odd
+
+use conditional operator
 
 */
+
 #include<iostream>
 
 using namespace std;
 
 main()
 {
-	int ary[100],i=0,found=0,z;
 	
-	do
-	{
-		cout<<"Please enter a number";
-		cin>>z;
-		if(z!=-1)
-		{
-		ary[i]=z;
-		i++;
-		}
-	}
-	while(i<100&&z!=-1);
+	int number=0;
 	
-	cout<<"total number of positive integers entered by a user"<<i-1;
+	
+	cout<<"Enter a number = ";
+	cin>>number;
+	
+	cout<<((number%2==0)?"even":"odd");	
 }
 
