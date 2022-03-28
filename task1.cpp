@@ -1,10 +1,7 @@
 /*
-Task 1
+TASK 1
 
-
-Take 2 values from user and find larger between them using conditional operator 
-
-
+Use do-while loop to print "Welcome to City University" 5 times?
 
 */
 
@@ -15,17 +12,14 @@ using namespace std;
 main()
 {
 	
-	int a,b,larger;
+	int run=1;
 	
-	cout<<"enter a number =  ";
-	cin>>a;
-	
-	cout<<"\n\nenter another value  =  ";
-	cin>>b;
-	
-	larger=(a>b)?a:b;
-	
-	cout<<"\n \n larger value is  = "<<larger;
+	do
+	{
+		cout<<"Welcome to city university\n\n";
+		run++;
+	}
+	while(run <=5);
 	
 }
 

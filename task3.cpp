@@ -1,10 +1,9 @@
-
 /*
 Task 3
 
-take student  marks & tells you whether he is pass or fail?
 
-use conditional operator
+Modify task 2? Write program that takes an integer input from user & display number till that integer
+
 
 */
 
@@ -15,12 +14,16 @@ using namespace std;
 main()
 {
 	
-	int marks=0;
+	int run=1,end_time=0;
 	
+	cout<<"Enter Number till where you want to print  \t";
+	cin>>end_time;
 	
-	cout<<"Enter your subject marks = ";
-	cin>>marks;
+	do
+	{
+		cout<<run <<"\t";
+		run++;
+	}
+	while(run <=end_time);
 	
-	cout<<((marks>=60)?"pass":"fail");	
 }
-

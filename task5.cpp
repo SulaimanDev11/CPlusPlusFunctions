@@ -1,3 +1,10 @@
+/*
+Task 5
+
+Write program that generate table of 2 using do-while loop
+
+*/
+
 #include<iostream>
 
 using namespace std;
@@ -5,19 +12,18 @@ using namespace std;
 main()
 {
 	
-	int amir_age,amara_age;
-	amir_age=0;                   // always assign value to variables you use in a program to make it error free
-	amara_age=0;
+	int run=1,end_time=10,table;
 	
-	cout<<"Please enter Amir's age\n";
-	cin>>amir_age;
+	cout<<"Enter Table you want to display  \t";
+	cin>>table;
 	
-	cout<<"Please enter Amara's age\n";
-	cin>>amara_age;
+	for(run=1;run <=end_time;run++)
 	
-	if(amir_age>amara_age)
-		cout<<"Amir age is older than Amara";
+	
+	{
+		cout<<table <<" x"<<run <<" = "<<table*run <<"\n";
 		
-		
+	}
+	
+	
 }
-

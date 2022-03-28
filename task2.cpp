@@ -1,9 +1,7 @@
 /*
-Task 2
+TASK 2
 
-Write program takes value from user if value is divisible by 2 print even if not than odd
-
-use conditional operator
+Use do-while loop to print first 10 integers with tab space
 
 */
 
@@ -14,12 +12,13 @@ using namespace std;
 main()
 {
 	
-	int number=0;
+	int run=1,end_time=9;
 	
+	do
+	{
+		cout<<run<<"\t";
+		run++;
+	}
+	while(run <=end_time);
 	
-	cout<<"Enter a number = ";
-	cin>>number;
-	
-	cout<<((number%2==0)?"even":"odd");	
 }
-
