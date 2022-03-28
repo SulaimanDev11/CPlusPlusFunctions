@@ -1,10 +1,8 @@
 /*
-
 Task 11
 
 
-guess character game (Modified while loop)
-
+program that produce first 10 integers in descending order
 
 */
 
@@ -14,26 +12,12 @@ using namespace std;
 
 main()
 {
+	cout<<"First 10 numbers in Descending order\n\n";
 	
-	int num_try=1;
-	char guess,save='c';
-	
-	do
+	for(int number=10;number>=0;number--)
 	{
-		cout<<"\n\nplease enter a single char A-Z this is your "<< num_try <<"   try   ";
-		cin>>guess;
-		if(guess==save)
-		{
-			cout<<"\n\nCongratulations, You have Guessed Correctly\n";
-		}
-		else
-		{
-			num_try++;
-			cout<<"\n\nSorry you have guessed wrongly  !!!TRY AGAIN!!!";
-		}
+		cout<<number<<endl;
 	}
-	while(num_try <=5&&guess!=save);
 	
 }
-
 

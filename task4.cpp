@@ -1,8 +1,17 @@
 /*
+
 Task 4
 
 
-Write a program using do-while loop that prints even number (from number 0-100)
+Wprogram using for Loop and display following result
+
+Number	Square	Cube
+1		1		1
+2		4		16
+3		9		27
+4		16		64
+5		25		125	
+6		36		216
 
 */
 
@@ -12,17 +21,15 @@ using namespace std;
 
 main()
 {
+	int loop_end=6;
 	
-	int run=1,end_time=100;
-	
-	cout<<"First 50 Even numbers are  \n";
+	cout<<"Number\tSquare\tCube\n";
 
-	
-	do
+
+	for(int number=0;number<=loop_end;number++)
 	{
-		cout<<run <<"\n";
-		run++;
-	}
-	while(run <=end_time);
-	
+		cout<<number <<"\t"<<number*number <<"\t"<<number*number*number <<"\n";
+	}	
 }
+
+

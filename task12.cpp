@@ -1,10 +1,8 @@
 /*
-
 Task 12
 
 
-guess character game (Modified while loop)
-
+program that produce first 10 integers in descending order
 
 */
 
@@ -14,33 +12,22 @@ using namespace std;
 
 main()
 {
+	int fact=1,result=1;
+	cout<<"Enter a number whos factorial you like\t=\t";
+	cin>>fact;
 	
-	int num_try=1;
-	char guess,save_small='c',save_capital='C';
+	cout<<"\n\nFactorial of  "<<fact<<" is\t=\t";
 	
-	do
+	for(int number=fact;number>=1;number--)
 	{
-		cout<<"\n\nplease enter a single char A-Z this is your "<< num_try <<"   try   ";
-		cin>>guess;
-		if(guess==save_small||guess==save_capital)
-		{
-			cout<<"\n\nCongratulations, You have Guessed Correctly\n";
-		}
-		else
-		{
-			num_try++;
-			if(num_try<5)
-			{
-			
-				cout<<"\n\nSorry you have guessed wrongly                   !!!TRY AGAIN!!!";
-			}
-			else
-			{
-				cout<<"\n\nThis is your last try";
-			}
-		}
+		result=result*number;
+		
+		
+		
+		
 	}
-	while(num_try <=5&&guess!=save_small&&guess!=save_capital);
 	
-
+	cout<<" \t= "<<result;
+	
 }
+

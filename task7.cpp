@@ -1,11 +1,8 @@
 /*
+
 Task 7
 
-Write a program that product following result 
-
-
-+*+*+*+*+*+*+*+*+*+*+*	
-
+Program produce sum of first 50 odd numbers from (0-100) and also produce sum of first 50 even numbers (0-100)
 
 */
 
@@ -15,24 +12,23 @@ using namespace std;
 
 main()
 {
+	int loop_end=10,sum_odd=0,sum_even=0;
 	
-	int run=1,end_time=20;
 	
 
-	
-	do
-	{	
-		if(run%2==0)
-		{
-			cout<<"*";
+	for(int number=0;number<=loop_end;number++)
+	{
+		if(number%2==0)
+		{		
+			sum_even=sum_even+number;
 		}
-		else
+		else if(number%2)
 		{
-			cout<<"+";
+			sum_odd	=sum_odd+number;;
 		}
-		
-		run++;
 	}
-	while(run <= end_time);
 	
+	cout<<"sum of first"<<loop_end <<"Even number is \t=\t"<<sum_even <<endl;
+	cout<<"sum of first"<<loop_end <<"odd number is \t=\t"<<sum_odd <<endl;	
 }
+

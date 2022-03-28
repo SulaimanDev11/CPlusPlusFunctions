@@ -1,17 +1,9 @@
 /*
+
 Task 9
 
-Write a program that product following result 
 
-***********
- ***********
-***********
- ***********
-***********
- ***********
-
-
-Hint:  Use nested do-while loop to complete structure?
+take input from user and generate table for number user has requested
 
 */
 
@@ -21,30 +13,17 @@ using namespace std;
 
 main()
 {
+	int loop_end=10,table;
 	
-	int outer=1,inner=1,end_time=8;
+	cout<<"Please Enter Number who's table you want  =\t";
+	cin>>table;
 	
-	
-	do
+	cout<<"\n\n\t*****Table of "<<table<<"***** \n\n\n";
+
+	for(int number=1;number<=loop_end;number++)
 	{
-		inner=1;
-		do
-		{
-			cout<<"*";
-			inner++;
-			
-		}
-		while(inner<=end_time);
-		cout<<"\n";
-		outer++;
-		
-		if(outer%2==0)
-			{
-				cout<<" ";
-			}
-				
-	}
-	while(outer <=end_time);
-	
+		cout<< table<<" x "<<number<<" = "<<table*number<<"\n";
+	}	
 }
+
 

@@ -1,15 +1,9 @@
 /*
+
 Task 8
 
-Write a program that produce following result 
 
-******
-******
-******
-******
-
-Hint:  Use nested do-while loop to complete structure?
-
+program that generate table of 2 using for loop
 */
 
 #include<iostream>
@@ -18,22 +12,13 @@ using namespace std;
 
 main()
 {
+	int loop_end=10;
 	
-	int outer=1,inner=1,end_time=8;
-	
-	
-	do
+	cout<<"\t*****Table of 2***** \n\n\n";
+
+	for(int number=1;number<=loop_end;number++)
 	{
-		inner=1;
-		do
-		{
-			cout<<"*";
-			inner++;	
-		}
-		while(inner<=end_time);
-		cout<<"\n";
-		outer++;		
-	}
-	while(outer <=end_time);
-	
+		cout<< "2 x "<<number<<" = "<<2*number<<"\n";
+	}	
 }
+

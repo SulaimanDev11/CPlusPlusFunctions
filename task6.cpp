@@ -1,8 +1,9 @@
 /*
+
 Task 6
 
-Write program that produce first 10 integers in descending order?
 
+Program  using for loop that prints odd number (from number 0-100)
 */
 
 #include<iostream>
@@ -11,17 +12,20 @@ using namespace std;
 
 main()
 {
+	int loop_end=10;
 	
-	int run=10,end_time=1;
-	
-	
-	cout<<"Numbers in Decending order "<<"\n\n";
-	
-	do
+	cout<<"Even\tOdd\n";
+
+	for(int number=0;number<=loop_end;number++)
 	{
-		cout<<run <<"\n";
-		run--;
-	}
-	while(run >= end_time);
-	
+		if(number%2==0)
+		{		
+			cout<<number <<"\t";
+		}
+		else if(number%2)
+		{
+			cout<<number<<"\n";
+		}
+	}	
 }
+

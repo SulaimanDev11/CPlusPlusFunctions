@@ -1,8 +1,9 @@
 /*
+
 Task 5
 
-Write program that generate table of 2 using do-while loop
 
+Program  using for loop that prints even number (from number 0-100)
 */
 
 #include<iostream>
@@ -11,19 +12,16 @@ using namespace std;
 
 main()
 {
+	int loop_end=100;
 	
-	int run=1,end_time=10,table;
-	
-	cout<<"Enter Table you want to display  \t";
-	cin>>table;
-	
-	for(run=1;run <=end_time;run++)
-	
-	
+	cout<<"First 50 even numbers are \n";
+
+	for(int number=0;number<=loop_end;number++)
 	{
-		cout<<table <<" x"<<run <<" = "<<table*run <<"\n";
-		
-	}
-	
-	
+		if(number%2==0)
+		{		
+			cout<<number <<"\n";
+		}
+	}	
 }
+
