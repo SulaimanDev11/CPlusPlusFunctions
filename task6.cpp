@@ -1,10 +1,11 @@
-/*
 
+/*
 Task 6
 
+Modify task 5 and produce sum of first 50 odd numbers from(0-100) and also produce sum of first 50 even numbers(0-100)?
 
-Program  using for loop that prints odd number (from number 0-100)
 */
+
 
 #include<iostream>
 
@@ -12,20 +13,22 @@ using namespace std;
 
 main()
 {
-	int loop_end=10;
+	int number=1,loop_end=100,odd=0,even=0;
 	
-	cout<<"Even\tOdd\n";
-
-	for(int number=0;number<=loop_end;number++)
+		
+	while(number<=loop_end)
 	{
 		if(number%2==0)
-		{		
-			cout<<number <<"\t";
-		}
-		else if(number%2)
 		{
-			cout<<number<<"\n";
+			odd=odd+number;
 		}
-	}	
+		else
+		{
+			even=even+number;
+		}
+		number++;
+	}
+	cout<<"\nSum of first 50 even numbers are  "<<even;
+	cout<<"\nSum of first 50 odd numbers are  "<<odd;	
 }
 

@@ -2,9 +2,10 @@
 
 Task 7
 
-Program produce sum of first 50 odd numbers from (0-100) and also produce sum of first 50 even numbers (0-100)
+Write a program that generate table of 2 using while loop?
 
 */
+
 
 #include<iostream>
 
@@ -12,23 +13,16 @@ using namespace std;
 
 main()
 {
-	int loop_end=10,sum_odd=0,sum_even=0;
+	int table=2,loop_end=10,number=1;
+	
+	cout<<"\t*****Table of "<<table<<"***** \n\n\n";
 	
 	
-
-	for(int number=0;number<=loop_end;number++)
+	while(number<=loop_end)
 	{
-		if(number%2==0)
-		{		
-			sum_even=sum_even+number;
-		}
-		else if(number%2)
-		{
-			sum_odd	=sum_odd+number;;
-		}
+		cout<<table<<" X "<<number<<" = "<<table*number<<"\n";
+		
+		number++;
 	}
-	
-	cout<<"sum of first"<<loop_end <<"Even number is \t=\t"<<sum_even <<endl;
-	cout<<"sum of first"<<loop_end <<"odd number is \t=\t"<<sum_odd <<endl;	
 }
 

@@ -1,16 +1,3 @@
-/*
-
-Task 13
-
-
-program that product following result
-
-
-+*+*+*+*+*+*+*+*+*+*+*
-
-
-*/
-
 #include<iostream>
 
 using namespace std;
@@ -18,16 +5,17 @@ using namespace std;
 main()
 {
 
-	for(int number=1;number<=20;number++)
+	int number=1;
+	
+	while(number<=16)
 	{
-		if(number%2)
+		cout<<"\t"<<number<<"\t";
+		if(number%4==0)
 		{
-			cout<<"+";
+			cout<<"\n";9			
 		}
-		else
-		{
-			cout<<"*";
-		}
+		
+		number++;
 	}
 }
 

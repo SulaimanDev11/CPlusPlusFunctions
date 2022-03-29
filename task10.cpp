@@ -2,10 +2,10 @@
 
 Task 10
 
-
-take two inputs from user one for table & one for multiple of table and produce table
+Write a program using while loop that prints even number (from number 0-100)
 
 */
+
 
 #include<iostream>
 
@@ -13,19 +13,12 @@ using namespace std;
 
 main()
 {
-	int loop_end=0,table;
+	int number=10,loop_end=1;
 	
-	cout<<"Please Enter Number who's table you want  =\t";
-	cin>>table;
-	
-	cout<<"\nPlease Enter Number of time you want your table to run =\t";
-	cin>>loop_end;
-	
-	cout<<"\n\n\t*****Table of "<<table<<"***** \n\n\n";
-
-	for(int number=1;number<=loop_end;number++)
+	while(number>=loop_end)
 	{
-		cout<< table<<" x "<<number<<" = "<<table*number<<"\n";
-	}	
+		cout<<number<<"\t";
+		number--;
+	}
 }
 

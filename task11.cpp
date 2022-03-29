@@ -1,10 +1,11 @@
 /*
+
 Task 11
 
-
-program that produce first 10 integers in descending order
+Produce factorial of a number entered by user
 
 */
+
 
 #include<iostream>
 
@@ -12,12 +13,26 @@ using namespace std;
 
 main()
 {
-	cout<<"First 10 numbers in Descending order\n\n";
+	int fact=1,result=1;
+	cout<<"Enter a number whos factorial you like\t=\t";
+	cin>>fact;
 	
-	for(int number=10;number>=0;number--)
+	cout<<"\n\nFactorial of  "<<fact<<" ! is\t=\t";
+	
+	while(fact>=1)
 	{
-		cout<<number<<endl;
+		result=result*fact;
+		cout<<fact;
+		
+		if(fact>1)
+		{		
+			cout<<" x ";
+		}
+		fact--;
+		
 	}
+	
+	cout<<" \t= "<<result;
 	
 }
 

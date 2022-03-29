@@ -1,9 +1,13 @@
 /*
-TASK 2
 
-Use do-while loop to print first 10 integers with tab space
+Task 2
+
+
+Use while loop to print first 10 integers with tab space
+
 
 */
+
 
 #include<iostream>
 
@@ -11,14 +15,12 @@ using namespace std;
 
 main()
 {
+	int number=1,loop_end=10;
 	
-	int run=1,end_time=9;
-	
-	do
+	while(number<=loop_end)
 	{
-		cout<<run<<"\t";
-		run++;
+		cout<<number<<"\t";
+		number++;
 	}
-	while(run <=end_time);
-	
 }
+

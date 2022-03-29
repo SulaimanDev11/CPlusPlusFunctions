@@ -2,8 +2,7 @@
 
 Task 4
 
-
-Wprogram using for Loop and display following result
+program using while Loop and display following result
 
 Number	Square	Cube
 1		1		1
@@ -13,7 +12,9 @@ Number	Square	Cube
 5		25		125	
 6		36		216
 
+
 */
+
 
 #include<iostream>
 
@@ -21,15 +22,15 @@ using namespace std;
 
 main()
 {
-	int loop_end=6;
+	int number=1,loop_end=6;
 	
-	cout<<"Number\tSquare\tCube\n";
-
-
-	for(int number=0;number<=loop_end;number++)
+	cout<<"Number\tSqaure\tCube\n";
+	
+	
+	while(number<=loop_end)
 	{
-		cout<<number <<"\t"<<number*number <<"\t"<<number*number*number <<"\n";
-	}	
+		cout<<number<<"\t"<<number*number<<"\t"<<number*number*number<<"\n";
+		number++;
+	}
 }
-
 

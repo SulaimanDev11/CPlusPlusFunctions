@@ -8,10 +8,6 @@
    *****
     ***
 	 *
-	 
-	 
-	 using just for loop
-	 
 */
 
 #include<iostream>
@@ -21,37 +17,44 @@ using namespace std;
 main()
 {
 	
+	int row=0,col=0,space;
 	
-	for(int row=0;row <=20;row=row+2)
+	while(row <=20)
 	{	
 		if(row <=10)
-		{			
-		for(int space=0;space<=(5-(row/2));space++)
+		{		
+		space=0;
+		while(space<=(5-(row/2)))
 			{
 				cout<<" ";		
+				space++;
+		
 			}
-			
-			for(int col=0;col<=row;col++)
+			col=0;
+			while(col<=row)
 			{
 				cout<<"*";
+				col++;
 			}		
 		}
 		else
-		{		
-		for(int space=10;space<=(5+(row/2));space++)
+		{
+		space=10;
+		while(space<=(5+(row/2)))
 			{
 				cout<<" ";		
-				
+				space++;		
 			}
-		
-			for(int col=20;col>=row;col--)
+			col=20;
+			while(col>=row)
 			{
 				cout<<"*";
+				col--;
 			}	
 				
 		}
 		cout<<"\n";
-		
+		row+=2;
 	}	
 	
 	

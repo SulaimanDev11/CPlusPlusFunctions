@@ -1,16 +1,12 @@
+
 /*
 
-Task 14
+program that produce following result 
 
-
-Write a program that product following result using just for loop
-
-
-1 2 3 4
-5 6 7 8
-910 11 12
-13 14 15 16
-
+******
+******
+******
+******
 
 */
 
@@ -20,18 +16,19 @@ using namespace std;
 
 main()
 {
+	int row=1,col=1;
 	
-	int loop_end=16;
-	
-	for(int number=1;number<=loop_end;number++)
+	while(row<=4)
 	{
-		cout<<number<<"\t";
-		if(number%4==0)
+		col=0;
+		while(col<=4)
 		{
-			cout<<"\n";
+			cout<<"*";
+			col++;
 		}
-		
+		row++;
+		cout<<"\n";
 	}
+	
 }
-
 

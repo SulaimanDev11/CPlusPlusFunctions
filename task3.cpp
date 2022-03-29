@@ -1,11 +1,13 @@
 /*
+
 Task 3
 
+Modify task 2? Write program that takes an integer input & display number till that integer?
 
-Modify task 2? Write program that takes an integer input from user & display number till that integer
 
 
 */
+
 
 #include<iostream>
 
@@ -13,17 +15,16 @@ using namespace std;
 
 main()
 {
+	int number=1,loop_end=10;
 	
-	int run=1,end_time=0;
+	cout<<"Please Enter a number till where you want numbers  ";
+	cin>>loop_end;
 	
-	cout<<"Enter Number till where you want to print  \t";
-	cin>>end_time;
-	
-	do
+	while(number<=loop_end)
 	{
-		cout<<run <<"\t";
-		run++;
+		cout<<number<<"  ";
+		number++;
 	}
-	while(run <=end_time);
-	
 }
+
+

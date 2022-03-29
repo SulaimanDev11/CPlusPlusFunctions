@@ -1,11 +1,11 @@
 /*
 
-Task 9
+Task 7
 
-
-take input from user and generate table for number user has requested
+Write a program that generate table of 2 using while loop?
 
 */
+
 
 #include<iostream>
 
@@ -13,17 +13,22 @@ using namespace std;
 
 main()
 {
-	int loop_end=10,table;
+	int table=2,loop_end=10,number=1;
 	
-	cout<<"Please Enter Number who's table you want  =\t";
+	cout<<"Enter Table you want\t";
 	cin>>table;
 	
-	cout<<"\n\n\t*****Table of "<<table<<"***** \n\n\n";
-
-	for(int number=1;number<=loop_end;number++)
+	cout<<"\n\nEnter Number of times\t";
+	cin>>loop_end;
+	
+	cout<<"\n\n\n\t*****Table of "<<table<<"***** \n\n\n";
+	
+	
+	while(number<=loop_end)
 	{
-		cout<< table<<" x "<<number<<" = "<<table*number<<"\n";
-	}	
+		cout<<table<<" X "<<number<<" = "<<table*number<<"\n";
+		
+		number++;
+	}
 }
-
 
