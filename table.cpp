@@ -1,11 +1,14 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 int main(){
-	int tab,i;
-	cout<<"Enter Table You want: ";
+	int tab,lim,i;
+	cout<<"Enter The Table You Want: ";
 	cin>>tab;
-	for(i=1;i<=10;i++){
-		cout<<tab<<"*"<<i<<"="<<i*tab<<endl;
+	cout<<"Enter Limit For Table: ";
+	cin>>lim;
+	for(i=1;i<=lim;i++){
+		cout<<tab<<"*"<<setw(3)<<i<<setw(2)<<"="<<setw(2)<<tab*i<<endl;
 	}
 	return 0;
 }
