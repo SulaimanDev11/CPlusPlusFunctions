@@ -4,7 +4,7 @@
 using namespace std;
 class functions{
 	private:
-		int arr[6],x,i,min,j,temp;
+		int arr[6],i,min,j,temp,mid,first,last,x;
 	public:
 		
 		void insertion(){
@@ -33,22 +33,54 @@ class functions{
 			}
 			getch();
 		}
-		void slection(){
+		void slectionSort(){
 			system("cls");
 			for(i=0;i<6;i++){
 				min=i;
-				for(j=0;j<6;j++){
-					if(arr[j]<arr[min+1]){
+				for(j=i+1;j<6;j++){
+					if(arr[min]<arr[j]){
 						min=j;
 					}
 					else{
 						temp=arr[min];
-						arr[min]=arr[i];
-						arr[i]=temp;
+						arr[min]=arr[j];
+						arr[j]=temp;
 					}
 				}
 			}
 			getch();
+		}
+		
+		void bubbleSort(){
+			system("cls");
+			for(i=0;i<6;i++){
+				for(j=0;j<6;j++){
+					if(arr[j]>arr[j+1]){
+						temp=arr[j];
+						arr[j]=arr[j+1];
+						arr[j+1]=temp;
+					}
+				}
+			}
+			getch();
+		}
+		
+		void binarySearch(){
+			system("cls");
+			cout<<"Enter data to find: ";
+			cin>>x;
+			first=0;
+			last=5;
+			while(first<last){
+				mid=(first+last)/2;
+				if(x>arr[mid]){
+					first=mid+1;
+				}
+				else if(x<arr[mid]){
+					last=mid-1;
+				}
+				else
+			}	
 		}
 };
 main(){
@@ -60,7 +92,7 @@ main(){
 			<<"\n\n\t\t2. Display" 
 			<<"\n\n\t\t3. Linear search"
 			<<"\n\n\t\t4. Selection "
-			<<"\n\n\t\t5. Update node "
+			<<"\n\n\t\t5. Bubble Sort "
 			<<"\n\n\t\t6.Exit "
 			<<"\n\n\tEnter Menu : ";
 		cin>>n;
@@ -78,11 +110,18 @@ main(){
 				break;
 			}
 			case 4:{
-				obj.slection();
+				obj.slectionSort();
 				break;
 			}
-			case 6:{}
+			case 5:{
+				obj.bubbleSort();
+				break;
+			}
+			case 6:{
+			//	obj.binarySearch;
+				break;
+			}
 		}
 	}
-	while(n!=6);
+	while(n!=8);
 }
